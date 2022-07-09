@@ -1,3 +1,6 @@
+import random
+
+
 def intro():
     print("The story begins in ancient times... \n")
     print("There was Green Emperor, rulling over The Edge Of The World \n")
@@ -11,16 +14,15 @@ def spell_challenge():
     # Template where user can input words to break create an incantation phrase
     print("In order to escape he needs to say an Incantation \n")
     print("Lets help the prince with some words to break out the spell.")
-    while True:
-        spell = input("Type in an incantation term \n").capitalize()
-        feeling = input("Type in a feeling  \n")
-        if spell == "":
-            input("Please type in a word \n")
-        elif feeling == "":
-            input("Please type in a word \n")
-        else:
-            print(f"{spell}! Shall the {feeling} spirit make me human again!\n")
-            print("Hey hey! Looking handsome again! \n")
+    spell = input("Type in an incantation term \n").capitalize()
+    feeling = input("Type in a feeling  \n")
+    if spell == "":
+        input("Please type in a word \n")
+    elif feeling == "":
+        input("Please type in a word \n")
+    else:
+        print(f"{spell}! Shall the {feeling} spirit make me human again!\n")
+        print("Hey hey! Looking handsome again! \n")
 
 
 def start_game():
@@ -113,7 +115,7 @@ def round_four():
     while True:
         choice = input("Type in yes / no \n")
         if choice == "yes":
-            final_round()
+            guess_number()
             continue
         elif choice == "no":
             game_over()
@@ -123,12 +125,29 @@ def round_four():
             continue
 
 
-def final_round():
-    print("last challenge")
+def guess_number():
+    # Generates a number between 1-3 and checks if it maches with user's input
+    random_number = random.randint(1, 3)
+    guess = 0
+    while guess != random_number:
+        guess = int(input("Guess a number between 1 and 3: \n"))
+        if guess != random_number:
+            print("You couldn't open the gates so you go back home\n")
+            game_over()
+            break
+        else:
+            print(f"Congradulations! You've guessed the number {random_number}! \n")
+            level_two()
+        break
 
 
 def game_over():
     print("GAME OVER")
+
+
+def level_two():
+    print("The gates are opening...")
+    print("Next level comig soon...")
 
 
 intro()
