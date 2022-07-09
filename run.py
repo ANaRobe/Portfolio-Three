@@ -19,6 +19,7 @@ def spell_challenge():
         input("Please type in a word \n")
     else:
         print(f"{spell}! Shall the {feeling} spirit make me human again!\n")
+        print("Hey hey! Looking handsome again! \n")
 
 
 def start_game():
@@ -47,7 +48,7 @@ def round_one():
         print("He escapes the well but as fly has only one day to live \n")
         spell_challenge()
         print("Dressed in a bear fur the king puts his son to test \n")
-        print("But the prince is to frightend to fight\n")
+        print("But the prince is to frightened to fight\n")
         print("now he is running back to the castle crying like a baby \n")
         game_over()
     else:
@@ -58,7 +59,7 @@ def round_two():
     # Choose accesory
     print("An old woman advices the young man \n")
     print("to ask his father for his Horse and his Sword \n")
-    print("The king needs to protect his own kingdom and refuses")
+    print("The king needs to protect his own kingdom and refuses \n")
     print("But eventually asks his son to choose between the two of them \n")
     choice = input("Type in horse / sword \n")
     if choice == "horse":
@@ -91,6 +92,7 @@ def round_four():
     print("They wonder for long time and the Sparrow wins the boy's trust \n")
     print("Now he tricks the prince to go down to a well to cool off \n")
     print("To spare his life, the Sparrow forces him to obey him \n")
+    print("Should the prince accept? \n")
     choice = input("Type in yes / no \n")
     if choice == "yes":
         final_round()
