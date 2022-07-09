@@ -2,6 +2,18 @@ def intro():
     start_game()
 
 
+def spell_challenge():
+    # Template where user can input words to break create an incantation phrase
+    spell = input("Type in an incantation term \n").capitalize()
+    feeling = input("Type in a feeling  \n")
+    if spell == "":
+        input("Please type in a word \n")
+    elif feeling == "":
+        input("Please type in a word \n")
+    else:
+        print(f"{spell}! Shall the {feeling} spirit make me human again!\n")
+
+
 def start_game():
     choice = input("Type in yes / no \n")
     if choice == "yes":
@@ -18,7 +30,7 @@ def round_one():
     if choice == "young":
         round_two()
     elif choice == "old":
-        game_over()
+        spell_challenge()
     else:
         input("Please type in correctly: \n")
 
