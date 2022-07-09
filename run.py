@@ -6,8 +6,10 @@ def start_game():
     choice = input("Type in yes / no \n")
     if choice == "yes":
         round_one()
-    else:
+    elif choice == "no":
         game_over()
+    else:
+        input("Please type in correctly: \n")
 
 
 def round_one():
@@ -15,8 +17,10 @@ def round_one():
     choice = input("Type in young / old \n")
     if choice == "young":
         round_two()
-    else:
+    elif choice == "old":
         game_over()
+    else:
+        input("Please type in correctly: \n")
 
 
 def round_two():
@@ -24,8 +28,10 @@ def round_two():
     choice = input("Type in horse / sword \n")
     if choice == "horse":
         round_three()
-    else:
+    elif choice == "sword":
         game_over()
+    else:
+        input("Please type in correctly: \n")
 
 
 def round_three():
@@ -33,8 +39,10 @@ def round_three():
     choice = input("Type in sparrow / redman \n")
     if choice == "sparrow":
         round_four()
-    else:
+    elif choice == "redman":
         game_over()
+    else:
+        input("Please type in correctly: \n")
 
 
 def round_four():
@@ -42,8 +50,10 @@ def round_four():
     choice = input("Type in yes / no \n")
     if choice == "yes":
         final_round()
-    else:
+    elif choice == "no":
         game_over()
+    else:
+        input("Please type in correctly: \n")
 
 
 def final_round():
@@ -51,7 +61,7 @@ def final_round():
 
 
 def game_over():
-    print("GAME OVER")     
+    print("GAME OVER")
 
 
-intro()           
+intro()
