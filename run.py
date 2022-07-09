@@ -30,9 +30,9 @@ def spell_challenge():
     spell = input("Type in an incantation term \n").capitalize()
     feeling = input("Type in a feeling  \n")
     if spell == "":
-        input("Please type in a word \n")
+        input("Please type in a word \n").lower()
     elif feeling == "":
-        input("Please type in a word \n")
+        input("Please type in a word \n").lower()
     else:
         sprint(f"{spell}! Shall the {feeling} spirit make me human again!\n")
         sprint("Hey hey! Looking handsome again! \n")
@@ -47,12 +47,12 @@ def start_game():
             round_one()
             continue
         elif choice == "no":
-            print("Thanks for passing by! \n")
+            sprint("Thanks for passing by! \n")
             game_over()
             play_again()
             continue
         else:
-            input("Please type in correctly: \n")
+            input("Please type in correctly: \n").lower()
 
 
 def round_one():
@@ -76,7 +76,7 @@ def round_one():
             play_again()
             continue
         else:
-            input("Please type in correctly: \n")
+            input("Please type in correctly: \n").lower()
 
 
 def round_two():
@@ -86,7 +86,7 @@ def round_two():
     sprint("The king needs to protect his own kingdom and refuses \n")
     sprint("But eventually asks his son to choose between the two of them \n")
     while True:
-        choice = input("Type in horse / sword \n")
+        choice = input("Type in horse / sword \n").lower()
         if choice == "horse":
             round_three()
             continue
@@ -98,7 +98,7 @@ def round_two():
             play_again()
             continue
         else:
-            input("Please type in correctly: \n")
+            input("Please type in correctly: \n").lower()
 
 
 def round_three():
@@ -107,7 +107,7 @@ def round_three():
     sprint("On the road he meets the Sparrow and the Redman \n")
     sprint("Which one of them should become the prince's slave? \n")
     while True:
-        choice = input("Type in sparrow / redman \n")
+        choice = input("Type in sparrow / redman \n").lower()
         if choice == "sparrow":
             round_four()
             continue
@@ -121,7 +121,7 @@ def round_three():
             play_again()
             continue
         else:
-            input("Please type in correctly: \n")
+            input("Please type in correctly: \n").lower()
 
 
 def round_four():
@@ -140,7 +140,7 @@ def round_four():
             play_again()
             continue
         else:
-            input("Please type in correctly: \n")
+            input("Please type in correctly: \n").lower()
 
 
 def guess_number():
@@ -163,19 +163,19 @@ def guess_number():
 
 
 def game_over():
-    print("GAME OVER \n")
+    sprint("GAME OVER \n")
 
 
 def level_two():
-    print("The gates are opening... \n")
-    print("Next level comig soon... \n")
+    sprint("The gates are opening... \n")
+    sprint("Next level comig soon... \n")
 
 
 def play_again():
     # Ask user if he wants to play again
     sprint("Do you want to play again? \n")
     while True:
-        choice = input("Type in yes / no \n")
+        choice = input("Type in yes / no \n").lower()
         if choice == "yes":
             round_one()
             continue
@@ -183,7 +183,7 @@ def play_again():
             game_over()
             break
         else:
-            input("Please type in correctly: \n")
+            input("Please type in correctly: \n").lower()
 
 
 intro()
