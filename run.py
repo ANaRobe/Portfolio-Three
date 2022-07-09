@@ -26,7 +26,7 @@ def intro():
 def spell_challenge():
     # Template where user can input words to break create an incantation phrase
     sprint("In order to escape he needs to say an Incantation \n")
-    sprint("Lets help the prince with some words to break out the spell.")
+    sprint("Lets help the prince with some words to break out the spell. \n")
     spell = input("Type in an incantation term \n").capitalize()
     feeling = input("Type in a feeling  \n")
     if spell == "":
@@ -49,10 +49,10 @@ def start_game():
         elif choice == "no":
             print("Thanks for passing by! \n")
             game_over()
-            break
+            play_again()
+            continue
         else:
             input("Please type in correctly: \n")
-            continue
 
 
 def round_one():
@@ -67,16 +67,16 @@ def round_one():
             sprint("After long journey he stopped to drink water \n")
             sprint("Oh no! He fell down in the well! \n")
             sprint("A scared magic frog transforms him in a fly to eat him \n")
-            sprint("He escapes the well but as fly has only one day to live \n")
+            sprint("He escapes the well but as fly has only a day to live \n")
             spell_challenge()
             sprint("Dressed in a bear fur the king puts his son to test \n")
             sprint("But the prince is to frightened to fight\n")
-            sprint("now he is running back to the castle crying like a baby \n")
+            sprint("Crying like a baby is reutrning back home \n")
             game_over()
-            break
+            play_again()
+            continue
         else:
             input("Please type in correctly: \n")
-            continue
 
 
 def round_two():
@@ -93,16 +93,16 @@ def round_two():
         elif choice == "sword":
             sprint("Dressed in a bear fur the king puts his son to test \n")
             sprint("The prince takes out his sword and fought \n")
-            sprint("Unfortunately he is wounded and has to come back home...\n")
+            sprint("Unfortunately he is wounded and has to come back home..\n")
             game_over()
-            break
+            play_again()
+            continue
         else:
             input("Please type in correctly: \n")
-            continue
 
 
 def round_three():
-    sprint("Dressed in a bear fur the king put his son to test \n")
+    sprint("Dressed in a bear fur the king puts his son to test \n")
     sprint("The horse is able to fly and escapes the confrontation \n")
     sprint("On the road he meets the Sparrow and the Redman \n")
     sprint("Which one of them should become the prince's slave? \n")
@@ -112,11 +112,16 @@ def round_three():
             round_four()
             continue
         elif choice == "redman":
-            game_over()
-            break
+            sprint("They wonder for long time and the prince gets hungry \n")
+            sprint("Redman encourages him to steal some eggs from a farm \n")
+            sprint("But an old wizard sees the boy in his garden \n")
+            sprint("Instantly he transformes the prince into a pig \n")
+            spell_challenge()
+            sprint("But unforrtunately the boy was not able to speak again \n")
+            play_again()
+            continue
         else:
             input("Please type in correctly: \n")
-            continue
 
 
 def round_four():
@@ -132,10 +137,10 @@ def round_four():
             continue
         elif choice == "no":
             game_over()
-            break
+            play_again()
+            continue
         else:
             input("Please type in correctly: \n")
-            continue
 
 
 def guess_number():
@@ -145,22 +150,40 @@ def guess_number():
     while guess != random_number:
         guess = int(input("Guess a number between 1 and 3: \n"))
         if guess != random_number:
-            print("You couldn't open the gates so you go back home\n")
+            sprint("You couldn't open the gates so you go back home \n")
             game_over()
-            break
+            play_again()
+            continue
         else:
-            sprint(f"Congradulations! You've guessed the number {random_number}! \n")
+            sprint("Congradulations! \n")
+            sprint(f"You've guessed the number {random_number}! \n")
             level_two()
+            continue
         break
 
 
 def game_over():
-    print("GAME OVER")
+    print("GAME OVER \n")
 
 
 def level_two():
-    print("The gates are opening...")
-    print("Next level comig soon...")
+    print("The gates are opening... \n")
+    print("Next level comig soon... \n")
+
+
+def play_again():
+    # Ask user if he wants to play again
+    sprint("Do you want to play again? \n")
+    while True:
+        choice = input("Type in yes / no \n")
+        if choice == "yes":
+            round_one()
+            continue
+        elif choice == "no":
+            game_over()
+            break
+        else:
+            input("Please type in correctly: \n")
 
 
 intro()
