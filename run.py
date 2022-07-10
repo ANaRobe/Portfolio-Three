@@ -52,7 +52,7 @@ def start_game():
             play_again()
             continue
         else:
-            input("Please type in correctly: \n").lower()
+            sprint("Please, type in correctly! \n")
 
 
 def round_one():
@@ -76,7 +76,7 @@ def round_one():
             play_again()
             continue
         else:
-            input("Please type in correctly: \n").lower()
+            sprint("Please, type in correctly! \n")
 
 
 def round_two():
@@ -98,7 +98,7 @@ def round_two():
             play_again()
             continue
         else:
-            input("Please type in correctly: \n").lower()
+            sprint("Please, type in correctly! \n")
 
 
 def round_three():
@@ -118,10 +118,11 @@ def round_three():
             sprint("Instantly he transformes the prince into a pig \n")
             spell_challenge()
             sprint("But unforrtunately the boy was not able to speak again \n")
+            sprint("and he came back home...")
             play_again()
             continue
         else:
-            input("Please type in correctly: \n").lower()
+            sprint("Please, type in correctly! \n")
 
 
 def round_four():
@@ -140,7 +141,7 @@ def round_four():
             play_again()
             continue
         else:
-            input("Please type in correctly: \n").lower()
+            sprint("Please, type in correctly! \n")
 
 
 def guess_number():
@@ -183,7 +184,7 @@ def play_again():
             game_over()
             break
         else:
-            input("Please type in correctly: \n").lower()
+            sprint("Please, type in correctly! \n")
 
 
 intro()
