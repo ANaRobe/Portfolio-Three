@@ -45,14 +45,12 @@ def start_game():
         choice = input("Type in yes / no \n")
         if choice == "yes":
             round_one()
-            continue
         elif choice == "no":
             sprint("Thanks for passing by! \n")
             game_over()
-            play_again()
-            continue
         else:
             sprint("Please, type in correctly! \n")
+            continue
 
 
 def round_one():
@@ -62,7 +60,6 @@ def round_one():
         choice = input("Type in young / old \n")
         if choice == "young":
             round_two()
-            continue
         elif choice == "old":
             sprint("After long journey he stopped to drink water \n")
             sprint("Oh no! He fell down in the well! \n")
@@ -72,11 +69,10 @@ def round_one():
             sprint("Dressed in a bear fur the king puts his son to test \n")
             sprint("But the prince is to frightened to fight\n")
             sprint("Crying like a baby is reutrning back home \n")
-            game_over()
             play_again()
-            continue
         else:
             sprint("Please, type in correctly! \n")
+            continue
 
 
 def round_two():
@@ -89,16 +85,14 @@ def round_two():
         choice = input("Type in horse / sword \n").lower()
         if choice == "horse":
             round_three()
-            continue
         elif choice == "sword":
             sprint("Dressed in a bear fur the king puts his son to test \n")
             sprint("The prince takes out his sword and fought \n")
             sprint("Unfortunately he is wounded and has to come back home..\n")
-            game_over()
             play_again()
-            continue
         else:
             sprint("Please, type in correctly! \n")
+            continue
 
 
 def round_three():
@@ -110,7 +104,6 @@ def round_three():
         choice = input("Type in sparrow / redman \n").lower()
         if choice == "sparrow":
             round_four()
-            continue
         elif choice == "redman":
             sprint("They wonder for long time and the prince gets hungry \n")
             sprint("Redman encourages him to steal some eggs from a farm \n")
@@ -118,11 +111,11 @@ def round_three():
             sprint("Instantly he transformes the prince into a pig \n")
             spell_challenge()
             sprint("But unforrtunately the boy was not able to speak again \n")
-            sprint("and he came back home...")
+            sprint("and he came back home... \n")
             play_again()
-            continue
         else:
             sprint("Please, type in correctly! \n")
+            continue
 
 
 def round_four():
@@ -134,14 +127,15 @@ def round_four():
     while True:
         choice = input("Type in yes / no \n")
         if choice == "yes":
+            sprint("After 3 months crossing the mountains and the seas \n")
+            sprint("he is finally in front of the kingdom's gate \n")
+            sprint("To open it he need to guess a number between 1 and 3 \n")
             guess_number()
-            continue
         elif choice == "no":
-            game_over()
             play_again()
-            continue
         else:
             sprint("Please, type in correctly! \n")
+            continue
 
 
 def guess_number():
@@ -152,19 +146,16 @@ def guess_number():
         guess = int(input("Guess a number between 1 and 3: \n"))
         if guess != random_number:
             sprint("You couldn't open the gates so you go back home \n")
-            game_over()
             play_again()
-            continue
         else:
             sprint("Congradulations! \n")
             sprint(f"You've guessed the number {random_number}! \n")
             level_two()
-            continue
-        break
 
 
 def game_over():
     sprint("GAME OVER \n")
+    exit()
 
 
 def level_two():
@@ -174,15 +165,14 @@ def level_two():
 
 def play_again():
     # Ask user if he wants to play again
+    print("GAME OVER \n")
     sprint("Do you want to play again? \n")
     while True:
         choice = input("Type in yes / no \n").lower()
         if choice == "yes":
             round_one()
-            continue
         elif choice == "no":
             game_over()
-            break
         else:
             sprint("Please, type in correctly! \n")
 
