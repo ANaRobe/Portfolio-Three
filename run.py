@@ -27,15 +27,16 @@ def spell_challenge():
     # Template where user can input words to break create an incantation phrase
     sprint("In order to escape he needs to say an Incantation \n")
     sprint("Lets help the prince with some words to break out the spell. \n")
-    spell = input("Type in an incantation term \n").capitalize()
-    feeling = input("Type in a feeling  \n")
-    if spell == "":
-        input("Please type in a word \n").lower()
-    elif feeling == "":
-        input("Please type in a word \n").lower()
-    else:
-        sprint(f"{spell}! Shall the {feeling} spirit make me human again!\n")
-        sprint("Hey hey! Looking handsome again! \n")
+    while True:
+        spell = input("Type in an incantation term \n").capitalize().strip()
+        feeling = input("Type in a feeling  \n").lower().strip()
+        if spell == "" or feeling == "":
+            sprint("That doesn't break the spell \n")
+            continue
+        else:
+            sprint(f"{spell}! Shall the {feeling} spirit make me human! \n")
+            sprint("Hey hey! Looking handsome again! \n")
+            break
 
 
 def start_game():
