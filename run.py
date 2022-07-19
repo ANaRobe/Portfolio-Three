@@ -43,7 +43,7 @@ def start_game():
     # Ask user if he wants to play
     sprint("Do you want to travel in time and join the Adventure? \n")
     while True:
-        choice = input("Type in yes / no \n")
+        choice = input("Type in yes / no \n").lower().strip()
         if choice == "yes":
             round_one()
         elif choice == "no":
@@ -58,7 +58,7 @@ def round_one():
     # Choose protagonist
     sprint("Choose which one of the boys should cross the world to merry \n")
     while True:
-        choice = input("Type in young / old \n")
+        choice = input("Type in young / old \n").lower().strip()
         if choice == "young":
             round_two()
         elif choice == "old":
@@ -83,7 +83,7 @@ def round_two():
     sprint("The king needs to protect his own kingdom and refuses \n")
     sprint("But eventually asks his son to choose between the two of them \n")
     while True:
-        choice = input("Type in horse / sword \n").lower()
+        choice = input("Type in horse / sword \n").lower().strip()
         if choice == "horse":
             round_three()
         elif choice == "sword":
@@ -102,7 +102,7 @@ def round_three():
     sprint("On the road he meets the Sparrow and the Redman \n")
     sprint("Which one of them should become the prince's slave? \n")
     while True:
-        choice = input("Type in sparrow / redman \n").lower()
+        choice = input("Type in sparrow / redman \n").lower().strip()
         if choice == "sparrow":
             round_four()
         elif choice == "redman":
@@ -126,7 +126,7 @@ def round_four():
     sprint("To spare his life, the Sparrow forces him to obey him \n")
     sprint("Should the prince accept it? \n")
     while True:
-        choice = input("Type in yes / no \n")
+        choice = input("Type in yes / no \n").lower().strip()
         if choice == "yes":
             sprint("After 3 months crossing the mountains and the seas \n")
             sprint("he is finally in front of the kingdom's gate \n")
@@ -169,7 +169,7 @@ def play_again():
     print("GAME OVER \n")
     sprint("Do you want to play again? \n")
     while True:
-        choice = input("Type in yes / no \n").lower()
+        choice = input("Type in yes / no \n").lower().strip()
         if choice == "yes":
             round_one()
         elif choice == "no":
