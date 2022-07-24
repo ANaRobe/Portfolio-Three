@@ -23,6 +23,10 @@ The focus is on the youngest son, therefore he is the right character to choose 
 If the user decides that the oldest son of the King should go and merry the princess, he will get on a dead end road where the oldest son will fail the the 'fight with the Bear' test and 'Game Over' will follow. 
 
 
+## Logic Flow Chart
+![alt text](/img/CHART.png)
+
+
 ## Current Features
 
 
