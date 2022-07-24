@@ -18,6 +18,33 @@ def sprint(line):
 
 
 def intro():
+    print(f"""{Fore.YELLOW}
+
+
+                       _    __    __    __    __    _                          
+                      | |__|__|__|__|__|__|__|__|__|_|                         
+ __    __    __       |_|___|___|___|___|___|___|___||       __    __    __   
+|__|  |__|  |__|      |___|___|___|___|___|___|___|__|      |__|  |__|  |__|   
+|__|__|__|__|__|       \____________________________/       |__|__|__|__|__|   
+|_|___|___|___||        |_|___|___|___|___|___|___||        |_|___|___|___||
+|___|___|___|__|        |___|___|___|___|___|___|__|        |___|___|___|__|   
+ \_|__|__|___|/          \________________________/          \_|__|__|__|_/    
+  \__|____|__/            |___|___|___|___|___|__|            \__|__|__|_/     
+   |||_|_|_||             |_|___|___|___|___|__|_|             |_|_|_|_||      
+   ||_|_|||_|__    __    _| _  __ |_ __  _ __  _ |_    __    __||_|_|_|_|      
+   |_|_|_|_||__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|_|_|_|_||
+   ||_|||_|||___|___|___|___|___|___|___|___|___|___|___|___|__||_|_|_|_|
+   |_|_|_|_||_|___|___|___|___|___|___|___|___|___|___|___|___||_|_|_|_||
+   ||_|_|_|_|___|___|___|___|___|___|___|___|___|___|___|___|__||_|_|_|_|
+   |_|||_|_||_|___|___|___|___|___|___|___|___|___|___|___|___||_|_|_|_||
+   ||_|_|_|_|___|___|___|___|___|_/| | | \__|___|___|___|___|__||_|_|_|_|
+   |_|_|_|_||_|___|___|___|___|__/ | | | |\___|___|___|___|___||_|_|_|_||
+   ||_|_|_|||___|___|___|___|___|| | | | | |____|___|___|___|__||_|_|_|_|
+   |_|_|_|_||_|___|___|___|___|_|| | | | | |__|___|___|___|___||_|_|_|_||
+  /___|___|__\__|___|___|___|___|| | | | | |____|___|___|___|_/_|___|__|_\ 
+ |_|_|_|_|_|_||___|___|___|___|_|| | | | | |__|___|___|___|__|_|__|__|__|_|
+ ||_|_|_|_|_|_|_|___|___|___|___||_|_|_|_|_|____|___|___|____|___|__|__|__|
+    """)
     print(f"""{Fore.GREEN}
   _    _                                  _ _     
  | |  | |                           /\   | | |    
@@ -41,9 +68,9 @@ def spell_challenge():
     sprint("In order to escape he needs to say an Incantation \n")
     sprint("Lets help the prince with some words to break out the spell. \n")
     while True:
-        spell = input(f"{Fore.BLUE}Type in an incantation term \n").capitalize().strip()
-        feeling = input(f"{Fore.BLUE}Type in a feeling  \n").lower().strip()
-        if spell == "" or feeling == "":
+        spell = input(f"{Fore.BLUE}Type in a magic term \n").capitalize()
+        feeling = input(f"{Fore.BLUE}Type in a feeling  \n").lower()
+        if spell.strip() == "" or feeling.strip() == "":
             print(f"{Fore.RED}That doesn't break the spell \n")
             continue
         else:
@@ -115,10 +142,10 @@ def round_three():
     sprint("On the road he meets the Sparrow and the Redman \n")
     sprint("Which one of them should become the prince's slave? \n")
     while True:
-        choice = input(f"{Fore.BLUE}Type in sparrow / redman \n").lower().strip()
-        if choice == "sparrow":
+        choice = input(f"{Fore.BLUE}Type in sparrow / redman \n").lower()
+        if choice.strip() == "sparrow":
             round_four()
-        elif choice == "redman":
+        elif choice.strip() == "redman":
             sprint("They wonder for long time and the prince gets hungry \n")
             sprint("Redman encourages him to steal some eggs from a farm \n")
             sprint("But an old wizard sees the boy in his garden \n")
