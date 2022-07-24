@@ -1,31 +1,21 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Harap Alb
 
-Welcome ANaRobe,
+HarapAlb is a Python terminal game, which runs in the Code Institute mock terminal on Heroku.
+ 
+The cult fairytale ["Harap Alb"](https://en.wikipedia.org/wiki/Harap_Alb#:~:text=Harap%20Alb%20in%20Romanian%20signifies,man%2C%20usually%20with%20dark%20features.) by Ion Creanga (Romanian author) had inspired this text-based  game.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+A deployed link to the website can be found [here](https://harapalb.herokuapp.com/)
 
-## Reminders
+## How To Play
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+When launching the app the INTRO (resume of the tale's introduction) is displayed. This introduce the user to the theme of the game and inquiers the user if he wants to play.
 
-## Creating the Heroku app
+ If yes the GAME will START with ROUND ONE. If no The GAME OVER will be displayed.
+ 
+The aim of the game is to assist the young prince to go and merry the Green Emperor's daughter in order to inherit his Kingdom. 
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+The player will first choose the protagonist and then help him to take decisions along the way in order to get to The Other Edge Of The World.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+The focus is on the youngest son, therefore he is the right character to choose to play with. He will go through many different challenges in his journey. Our game has for rounds and every wrong choice will lead to the end of the game.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+If the user decides that the oldest son of the King should go and merry the princess, he will get on a dead end road where the oldest son will fail the the 'fight with the Bear' test and 'Game Over' will follow. 
