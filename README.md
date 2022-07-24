@@ -1,10 +1,12 @@
 # Harap Alb
 
-HarapAlb is a Python terminal game, which runs in the Code Institute mock terminal on Heroku.
+
+Harap Alb is a Python terminal game, which runs in the Code Institute mock terminal on Heroku.
  
 The cult fairytale ["Harap Alb"](https://en.wikipedia.org/wiki/Harap_Alb#:~:text=Harap%20Alb%20in%20Romanian%20signifies,man%2C%20usually%20with%20dark%20features.) by Ion Creanga (Romanian author) had inspired this text-based  game.
 
 A deployed link to the website can be found [here](https://harapalb.herokuapp.com/)
+
 
 ## How To Play
 
@@ -19,3 +21,34 @@ The player will first choose the protagonist and then help him to take decisions
 The focus is on the youngest son, therefore he is the right character to choose to play with. He will go through many different challenges in his journey. Our game has for rounds and every wrong choice will lead to the end of the game.
 
 If the user decides that the oldest son of the King should go and merry the princess, he will get on a dead end road where the oldest son will fail the the 'fight with the Bear' test and 'Game Over' will follow. 
+
+
+## Current Features
+
+
+- Accepts user input
+
+- Reads input 
+
+- Manipulates data
+
+- Input validation 
+
+- Rising errors (including blankspaces inputs):
+
+All answeres are checked to ensure the user inputs information where requested before the game continues and should any incorect data be used, the user is provided with feedback on what has gone wrong and the question is asked again.
+
+- Questions with 2 options to choose from:
+
+There is always a right (which takes the player to the next ROUND) path or a wrong path (which ends with GAME OVER).
+
+- Input of words in a template with the purpose to create a magic phrase:
+
+The first  and third round challenges are the player requesting to add some words to a magic phrase in order to break out a spell.
+
+- Guessing a randomly generated number:
+
+When reaching the final round, the user is asked to guess a number between 1 and 3 which was randomly generated. If the user guesses the number the Gates of the of the Kingdom will open and the protagonist will get to the next level. 
+
+
+
