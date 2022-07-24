@@ -24,7 +24,7 @@ If the user decides that the oldest son of the King should go and merry the prin
 
 
 ## Logic Flow Chart
-![alt text](/img/CHART.png)
+![alt text](/img/chart.png)
 
 
 ## Current Features
@@ -74,3 +74,19 @@ When reaching the final round, the user is asked to guess a number between 1 and
 - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 - GitHub GitHub is used to store the projects code after being pushed from Git.
 - Gitpod An online IDE linked to the GitHub repository used to write my code.
+
+
+## Testing
+
+### Manual Testing
+Print statements were used to check the outcome were useed constantly while creating the functions. 
+Manual testing of each option was carried out to ensure the game ran as designed and also to ensure each response was dealt with correctly. 
+
+The game was again manually tested through the Heroku app to ensure it ran smoothly and without errors.
+
+Friends also tested its functionality. Once all bugs and issues had been resolved the game ran smoothly.
+
+### PP3 Validator Testing
+
+
+![alt text](/img/pep8.png)
