@@ -55,4 +55,22 @@ The first  and third round challenges are the player requesting to add some word
 When reaching the final round, the user is asked to guess a number between 1 and 3 which was randomly generated. If the user guesses the number the Gates of the of the Kingdom will open and the protagonist will get to the next level. 
 
 
+## Technologies Used
 
+### Languages Used
+- Python
+
+### Python Packages
+- Colorama Text in terminal are shown in different colours.
+- Random returns a random integer.
+- Time used for print effect delay.
+
+### Tools
+- Heroku was used to deploy the live project.
+- Patorjk was used to generate Ascii Art.
+- PEP8 online was used to validate Python code.
+- https://www.lucidchart.com/ was used to create the Flowchart.
+- The top screen shot for responsive design was taken from: https://ui.dev/amiresponsive
+- Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+- GitHub GitHub is used to store the projects code after being pushed from Git.
+- Gitpod An online IDE linked to the GitHub repository used to write my code.
