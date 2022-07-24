@@ -18,6 +18,17 @@ def sprint(line):
 
 
 def intro():
+    print(f"""{Fore.GREEN}
+  _    _                                  _ _     
+ | |  | |                           /\   | | |    
+ | |__| | __ _ _ __ __ _ _ __      /  \  | | |__  
+ |  __  |/ _` | '__/ _` | '_ \    / /\ \ | | '_ \ 
+ | |  | | (_| | | | (_| | |_) |  / ____ \| | |_) |
+ |_|  |_|\__,_|_|  \__,_| .__/  /_/    \_\_|_.__/ 
+                        | |                       
+                        |_|                                                                    
+    """)
+    print()    
     sprint("The story begins in ancient times... \n")
     sprint("There was Green Emperor, rulling over The Edge Of The World \n")
     sprint("He had only one daughter and no son to inherit his kingdom \n")
@@ -46,7 +57,6 @@ def start_game():
     sprint("Do you want to travel in time and join the Adventure? \n")
     while True:
         choice = input(f"{Fore.BLUE}Type in yes / no \n").lower().strip()
-        print("\033[39m")
         if choice == "yes":
             round_one()
         elif choice == "no":
@@ -158,7 +168,15 @@ def guess_number():
 
 
 def game_over():
-    print("GAME OVER \n")
+    print(f"""{Fore.RED}
+   _____                         ____                 
+  / ____|                       / __ \                
+ | |  __  __ _ _ __ ___   ___  | |  | |_   _____ _ __ 
+ | | |_ |/ _` | '_ ` _ \ / _ \ | |  | \ \ / / _ \ '__|
+ | |__| | (_| | | | | | |  __/ | |__| |\ V /  __/ |   
+  \_____|\__,_|_| |_| |_|\___|  \____/  \_/ \___|_|   
+                                                                                                    
+    """)
     exit()
 
 
@@ -169,7 +187,14 @@ def level_two():
 
 def play_again():
     # Ask user if he wants to play again
-    print("GAME OVER \n")
+    print(f"""{Fore.YELLOW}
+ __     __           _               _   
+ \ \   / /          | |             | |  
+  \ \_/ /__  _   _  | |     ___  ___| |_ 
+   \   / _ \| | | | | |    / _ \/ __| __|
+    | | (_) | |_| | | |___| (_) \__ \ |_ 
+    |_|\___/ \__,_| |______\___/|___/\__|
+    """)
     sprint("Do you want to play again? \n")
     while True:
         choice = input("Type in yes / no \n").lower().strip()
