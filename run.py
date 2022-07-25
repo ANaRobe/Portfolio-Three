@@ -1,4 +1,4 @@
-
+"""Import modules"""
 import random
 import sys
 import time
@@ -8,7 +8,7 @@ colorama.init(autoreset=True)
 
 
 def sprint(line):
-    # Printing characters one by one
+    """Printing characters one by one"""
     for character in line:
         sys.stdout.write(character)
         sys.stdout.flush()
@@ -19,6 +19,7 @@ def sprint(line):
 
 
 def intro():
+    """ASCII art Castle, Title and introductory text """
     print(fr"""{Fore.YELLOW}
                        _    __    __    __    __    _
                       | |__|__|__|__|__|__|__|__|__|_|
@@ -65,7 +66,7 @@ def intro():
 
 
 def spell_challenge():
-    # Template where user can input words to break create an incantation phrase
+    """Template where user can input words to break create a magic phrase"""
     sprint("In order to escape he needs to say an Incantation \n")
     sprint("Lets help the prince with some words to break out the spell. \n")
     while True:
@@ -81,7 +82,7 @@ def spell_challenge():
 
 
 def start_game():
-    # Ask user if he wants to play
+    """Ask user if he wants to play"""
     sprint("Do you want to travel in time and join the Adventure? \n")
     while True:
         choice = input(f"{Fore.BLUE}Type in yes / no \n").lower().strip()
@@ -96,7 +97,7 @@ def start_game():
 
 
 def round_one():
-    # Choose protagonist
+    """Choose protagonist"""
     sprint("Choose which one of the boys should cross the world to merry \n")
     while True:
         choice = input(f"{Fore.BLUE}Type in young / old \n").lower().strip()
@@ -118,7 +119,7 @@ def round_one():
 
 
 def round_two():
-    # Choose accesory
+    """Choose accesory"""
     sprint("An old woman advices the young man \n")
     sprint("to ask his father for his Horse and his Sword \n")
     sprint("The king needs to protect his own kingdom and refuses \n")
@@ -138,6 +139,7 @@ def round_two():
 
 
 def round_three():
+    """Choose betwwen strangers to become prince's slave"""
     sprint("Dressed in a bear fur the king puts his son to test \n")
     sprint("The horse is able to fly and escapes the confrontation \n")
     sprint("On the road he meets the Sparrow and the Redman \n")
@@ -161,7 +163,7 @@ def round_three():
 
 
 def round_four():
-    # yes/no compromise
+    """yes/no compromise"""
     sprint("They wonder for long time and the Sparrow wins the boy's trust \n")
     sprint("Now he tricks the prince to go down to a well to cool off \n")
     sprint("To spare his life, the Sparrow forces him to obey him \n")
@@ -181,7 +183,7 @@ def round_four():
 
 
 def guess_number():
-    # Generates a number between 1-3 and checks if it maches with user's input
+    """Generates a number between 1-3 and checks if it maches user's input"""
     random_number = random.randint(1, 3)
     guess = 0
     while guess != random_number:
@@ -196,6 +198,7 @@ def guess_number():
 
 
 def game_over():
+    """Game Over"""
     print(fr"""{Fore.RED}
    _____                         ____
   / ____|                       / __ \
@@ -208,12 +211,13 @@ def game_over():
 
 
 def level_two():
+    """Coming soon second level"""
     print(f"{Fore.MAGENTA}The gates are opening... \n")
     print(F"{Fore.MAGENTA}Next level comig soon... \n")
 
 
 def play_again():
-    # Ask user if he wants to play again
+    """Ask user if he wants to play again"""
     print(fr"""{Fore.YELLOW}
  __     __           _               _
  \ \   / /          | |             | |
