@@ -214,7 +214,7 @@ def level_two():
     """Coming soon second level"""
     print(f"{Fore.MAGENTA}The gates are opening... \n")
     print(F"{Fore.MAGENTA}Next level comig soon... \n")
-
+    exit()
 
 def play_again():
     """Ask user if he wants to play again"""
