@@ -18,8 +18,19 @@ def sprint(line):
             time.sleep(0.05)
 
 
-def intro():
-    """ASCII art Castle, Title and introductory text """
+def intro(): 
+    """Title and ASCII art Castle, introductory text """
+    sprint(r"""
+  _    _                                  _ _
+ | |  | |                           /\   | | |
+ | |__| | __ _ _ __ __ _ _ __      /  \  | | |_
+ |  __  |/ _` | '__/ _` | '_ \    / /\ \ | | '_ \
+ | |  | | (_| | | | (_| | |_) |  / ____ \| | |_) |
+ |_|  |_|\__,_|_|  \__,_| .__/  /_/    \_\_|_.__/
+                        | |
+                        |_|
+    """)
+
     print(fr"""{Fore.YELLOW}
                        _    __    __    __    __    _
                       | |__|__|__|__|__|__|__|__|__|_|
@@ -47,17 +58,6 @@ def intro():
     """)
     print("")
     print("")
-    print(fr"""{Fore.BLUE}
-  _    _                                  _ _
- | |  | |                           /\   | | |
- | |__| | __ _ _ __ __ _ _ __      /  \  | | |_
- |  __  |/ _` | '__/ _` | '_ \    / /\ \ | | '_ \
- | |  | | (_| | | | (_| | |_) |  / ____ \| | |_) |
- |_|  |_|\__,_|_|  \__,_| .__/  /_/    \_\_|_.__/
-                        | |
-                        |_|
-    """)
-    print()
     sprint("The story begins in ancient times... \n")
     sprint("There was Green Emperor, rulling over The Edge Of The World \n")
     sprint("He had only one daughter and no son to inherit his kingdom \n")
