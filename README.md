@@ -142,3 +142,9 @@ Friends also tested its functionality. Once all bugs and issues had been resolve
 The story for this game has been taken and adapted from the book ["Harap Alb"](https://en.wikipedia.org/wiki/Harap_Alb#:~:text=Harap%20Alb%20in%20Romanian%20signifies,man%2C%20usually%20with%20dark%20features.) by Ion Creanga
 
 
+## Fixed Bugs
+
+- An error (ModuleNotFoundError: No module named ‘colorama’) was displayed after importing Colorama module even it was installed through the comand: pip3 install colorrama. Finding an answer to a similar question on Slack I have added 'colorama==0.4.4' in requirements.txt
+
+- Over 100 problems were caused by the back slashes in ASCII art : 'invalid escape sequence' these issues were solved by adding r in front of each string to ignore escape characters
+
