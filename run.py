@@ -1,3 +1,4 @@
+
 import random
 import sys
 import time
@@ -18,7 +19,7 @@ def sprint(line):
 
 
 def intro():
-    print(f"""{Fore.YELLOW}
+    print(fr"""{Fore.YELLOW}
                        _    __    __    __    __    _
                       | |__|__|__|__|__|__|__|__|__|_|
  __    __    __       |_|___|___|___|___|___|___|___||       __    __    __
@@ -45,7 +46,7 @@ def intro():
     """)
     print("")
     print("")
-    print(f"""{Fore.GREEN}
+    print(fr"""{Fore.BLUE}
   _    _                                  _ _
  | |  | |                           /\   | | |
  | |__| | __ _ _ __ __ _ _ __      /  \  | | |_
@@ -195,7 +196,7 @@ def guess_number():
 
 
 def game_over():
-    print(f"""{Fore.RED}
+    print(fr"""{Fore.RED}
    _____                         ____
   / ____|                       / __ \
  | |  __  __ _ _ __ ___   ___  | |  | |_   _____ _ __
@@ -213,7 +214,7 @@ def level_two():
 
 def play_again():
     # Ask user if he wants to play again
-    print(f"""{Fore.YELLOW}
+    print(fr"""{Fore.YELLOW}
  __     __           _               _
  \ \   / /          | |             | |
   \ \_/ /__  _   _  | |     ___  ___| |_
