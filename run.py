@@ -18,7 +18,7 @@ def sprint(line):
             time.sleep(0.05)
 
 
-def intro(): 
+def intro():
     """Title and ASCII art Castle, introductory text """
     sprint(r"""
   _    _                                  _ _
@@ -30,7 +30,7 @@ def intro():
                         | |
                         |_|
     """)
-
+    print()
     print(fr"""{Fore.YELLOW}
                        _    __    __    __    __    _
                       | |__|__|__|__|__|__|__|__|__|_|
@@ -56,8 +56,7 @@ def intro():
  |_|_|_|_|_|_||___|___|___|___|_|| | | | | |__|___|___|___|__|_|__|__|__|_|
  ||_|_|_|_|_|_|_|___|___|___|___||_|_|_|_|_|____|___|___|____|___|__|__|__|
     """)
-    print("")
-    print("")
+    print()
     sprint("The story begins in ancient times... \n")
     sprint("There was Green Emperor, rulling over The Edge Of The World \n")
     sprint("He had only one daughter and no son to inherit his kingdom \n")
@@ -70,8 +69,10 @@ def spell_challenge():
     sprint("In order to escape he needs to say an Incantation \n")
     sprint("Lets help the prince with some words to break out the spell. \n")
     while True:
+        print()
         spell = input(f"{Fore.BLUE}Type in a magic term \n").capitalize()
         feeling = input(f"{Fore.BLUE}Type in a feeling  \n").lower()
+        print()
         if spell.strip() == "" or feeling.strip() == "":
             print(f"{Fore.RED}That doesn't break the spell \n")
             continue
@@ -85,7 +86,9 @@ def start_game():
     """Ask user if he wants to play"""
     sprint("Do you want to travel in time and join the Adventure? \n")
     while True:
+        print()
         choice = input(f"{Fore.BLUE}Type in yes / no \n").lower().strip()
+        print()
         if choice == "yes":
             round_one()
         elif choice == "no":
@@ -100,7 +103,9 @@ def round_one():
     """Choose protagonist"""
     sprint("Choose which one of the boys should cross the world to merry \n")
     while True:
+        print()
         choice = input(f"{Fore.BLUE}Type in young / old \n").lower().strip()
+        print()
         if choice == "young":
             round_two()
         elif choice == "old":
@@ -125,7 +130,9 @@ def round_two():
     sprint("The king needs to protect his own kingdom and refuses \n")
     sprint("But eventually asks his son to choose between the two of them \n")
     while True:
+        print()
         choice = input(f"{Fore.BLUE}Type in horse / sword \n").lower().strip()
+        print()
         if choice == "horse":
             round_three()
         elif choice == "sword":
@@ -145,14 +152,16 @@ def round_three():
     sprint("On the road he meets the Sparrow and the Redman \n")
     sprint("Which one of them should become the prince's slave? \n")
     while True:
+        print()
         choice = input(f"{Fore.BLUE}Type in sparrow / redman \n").lower()
+        print()
         if choice.strip() == "sparrow":
             round_four()
         elif choice.strip() == "redman":
             sprint("They wonder for long time and the prince gets hungry \n")
             sprint("Redman encourages him to steal some eggs from a farm \n")
             sprint("But an old wizard sees the boy in his garden \n")
-            sprint("Instantly he transformes the prince into a pig \n")
+            sprint("Instantly he transforms the prince into a pig \n")
             spell_challenge()
             sprint("But unforrtunately the boy was not able to speak again \n")
             sprint("and he came back home... \n")
@@ -169,7 +178,9 @@ def round_four():
     sprint("To spare his life, the Sparrow forces him to obey him \n")
     sprint("Should the prince accept it? \n")
     while True:
+        print()
         choice = input(f"{Fore.BLUE}Type in yes / no \n").lower().strip()
+        print()
         if choice == "yes":
             sprint("After 3 months crossing the mountains and the seas \n")
             sprint("he is finally in front of the kingdom's gate \n")
@@ -187,18 +198,21 @@ def guess_number():
     random_number = random.randint(1, 3)
     guess = 0
     while guess != random_number:
+        print()
         guess = int(input(f"{Fore.BLUE}Guess a number between 1 and 3: \n"))
+        print()
         if guess != random_number:
             sprint("You couldn't open the gates so you go back home \n")
             play_again()
         else:
-            sprint("Congradulations! \n")
+            print(f"{Fore.MAGENTA}Congradulations! \n")
             sprint(f"You've guessed the number {random_number}! \n")
             level_two()
 
 
 def game_over():
     """Game Over"""
+    print()
     print(fr"""{Fore.RED}
    _____                         ____
   / ____|                       / __ \
@@ -212,12 +226,15 @@ def game_over():
 
 def level_two():
     """Coming soon second level"""
+    print()
     print(f"{Fore.MAGENTA}The gates are opening... \n")
     print(F"{Fore.MAGENTA}Next level comig soon... \n")
     exit()
 
+
 def play_again():
     """Ask user if he wants to play again"""
+    print()
     print(fr"""{Fore.YELLOW}
  __     __           _               _
  \ \   / /          | |             | |
@@ -226,9 +243,11 @@ def play_again():
     | | (_) | |_| | | |___| (_) \__ \ |_
     |_|\___/ \__,_| |______\___/|___/\__|
     """)
+    print()
     sprint("Do you want to play again? \n")
+    print()
     while True:
-        choice = input("Type in yes / no \n").lower().strip()
+        choice = input(f"{Fore.BLUE}Type in yes / no \n").lower().strip()
         if choice == "yes":
             round_one()
         elif choice == "no":
