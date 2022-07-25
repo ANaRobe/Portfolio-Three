@@ -1,5 +1,7 @@
 # Harap Alb
 
+![alt text](/img/intro.png)
+
 
 Harap Alb is a Python terminal game, which runs in the Code Institute mock terminal on Heroku.
  
@@ -7,6 +9,10 @@ The cult fairytale ["Harap Alb"](https://en.wikipedia.org/wiki/Harap_Alb#:~:text
 
 A deployed link to the website can be found [here](https://harapalb.herokuapp.com/)
 
+
+## Showcase
+
+![alt text](/img/amiresponsive.png)
 
 ## How To Play
 
@@ -59,7 +65,7 @@ When reaching the final round, the user is asked to guess a number between 1 and
 
 ### ASCII 
 
-[PATROJK](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=THIS%20IS%20MY%20GAME) was used to generate ASCII ART 
+[PATROJK](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=THIS%20IS%20MY%20GAME) [LoveASCII] (http://loveascii.com/castles.html) were used to generate ASCII ART 
 
 ### Colours
 Colorama module was imported to colour:
@@ -106,10 +112,10 @@ Colorama module was imported to colour:
 
 ### Tools
 - Heroku was used to deploy the live project.
-- Patorjk was used to generate Ascii Art.
+- Patorjk and Loveascii was used to generate Ascii Art.
 - PEP8 online was used to validate Python code.
 - https://www.lucidchart.com/ was used to create the Flowchart.
-- The top screen shot for responsive design was taken from: https://ui.dev/amiresponsive
+- The top screen shot for responsive design was taken from: https://amiresponsive.co.uk/
 - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 - GitHub GitHub is used to store the projects code after being pushed from Git.
 - Gitpod An online IDE linked to the GitHub repository used to write my code.
@@ -131,7 +137,8 @@ Friends also tested its functionality. Once all bugs and issues had been resolve
 ![alt text](/img/pep8.png)
 
 
-##Content
+## Content
 
 The story for this game has been taken and adapted from the book ["Harap Alb"](https://en.wikipedia.org/wiki/Harap_Alb#:~:text=Harap%20Alb%20in%20Romanian%20signifies,man%2C%20usually%20with%20dark%20features.) by Ion Creanga
+
 
