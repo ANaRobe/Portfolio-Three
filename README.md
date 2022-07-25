@@ -148,3 +148,35 @@ The story for this game has been taken and adapted from the book ["Harap Alb"](h
 
 - Over 100 problems were caused by the back slashes in ASCII art : 'invalid escape sequence' these issues were solved by adding r in front of each string to ignore escape characters
 
+
+## Acknowledgements
+
+ For inpiration in general, for code and advice, I'd like to give thanks to:
+
+* Martina Terlevic
+
+* Kasia Bogucka
+
+
+### Sources
+
+- Sites that provided me with helpful information and resolved many of my issues:
+
+https://learn.codeinstitute.net
+https://stackoverflow.com/
+https://www.freecodecamp.org/
+https://www.w3schools.com/ 
+
+- Youtube Tutorials that helped me to understand Python and how to understand other technolgies used for this project:
+
+https://www.youtube.com/watch?v=Es6LpT4I7vY&ab_channel=Codecert
+https://www.youtube.com/watch?v=miuHrP2O7Jw&ab_channel=DougMcNally
+https://www.youtube.com/watch?v=HzDcKq2NDwM&ab_channel=ElijahHenderson
+https://www.youtube.com/watch?v=8ext9G7xspg&ab_channel=freeCodeCamp.org
+https://www.youtube.com/watch?v=u51Zjlnui4Y&ab_channel=TechWithTim
+https://www.youtube.com/watch?v=y_7czmJXK_c&ab_channel=EsterlingAccime
+
+- Projects of other fellow colleagues which inspired this game:
+
+https://github.com/sherryrich/bandersnatch
+https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3
