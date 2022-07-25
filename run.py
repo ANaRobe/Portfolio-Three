@@ -101,6 +101,7 @@ def start_game():
 
 def round_one():
     """Choose protagonist"""
+    print()
     sprint("Choose which one of the boys should cross the world to merry \n")
     while True:
         print()

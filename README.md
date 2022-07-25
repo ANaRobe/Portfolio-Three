@@ -55,6 +55,45 @@ The first  and third round challenges are the player requesting to add some word
 When reaching the final round, the user is asked to guess a number between 1 and 3 which was randomly generated. If the user guesses the number the Gates of the of the Kingdom will open and the protagonist will get to the next level. 
 
 
+## Design
+
+### ASCII 
+
+[PATROJK](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=THIS%20IS%20MY%20GAME) was used to generate ASCII ART 
+
+### Colours
+Colorama module was imported to colour:
+
+- Castle -YELLOW
+
+![alt text](/img/castle.png)
+
+- Game Over -RED
+
+![alt text](/img/game_over.png)
+
+- You Lost -YELLOW
+
+![alt text](/img/you_lost.png)
+
+- Congradulations and Level Two -MAGENTA
+
+![alt text](/img/level_two.png)
+
+- Inputs -Blue
+
+![alt text](/img/inputs.png)
+
+- Errors -RED
+
+![alt text](/img/errors.png)
+
+
+- Since "Alb" means "White" in Romanian, the title remained uncolored
+
+![alt text](/img/harap_alb.png)
+
+
 ## Technologies Used
 
 ### Languages Used
@@ -90,3 +129,9 @@ Friends also tested its functionality. Once all bugs and issues had been resolve
 
 
 ![alt text](/img/pep8.png)
+
+
+##Content
+
+The story for this game has been taken and adapted from the book ["Harap Alb"](https://en.wikipedia.org/wiki/Harap_Alb#:~:text=Harap%20Alb%20in%20Romanian%20signifies,man%2C%20usually%20with%20dark%20features.) by Ion Creanga
+
