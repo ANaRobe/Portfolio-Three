@@ -44,7 +44,7 @@ If the user decides that the oldest son of the King should go and merry the prin
 
 - Input validation 
 
-- Rising errors (including blankspaces inputs):
+- Rising errors:
 
 All answeres are checked to ensure the user inputs information where requested before the game continues and should any incorect data be used, the user is provided with feedback on what has gone wrong and the question is asked again.
 
@@ -65,9 +65,10 @@ When reaching the final round, the user is asked to guess a number between 1 and
 
 ### ASCII 
 
-[PATROJK](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=THIS%20IS%20MY%20GAME) [LoveASCII] (http://loveascii.com/castles.html) were used to generate ASCII ART 
+[PATROJK](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=THIS%20IS%20MY%20GAME) [LoveASCII](http://loveascii.com/castles.html) were used to generate ASCII ART 
 
 ### Colours
+
 Colorama module was imported to colour:
 
 - Castle -YELLOW
@@ -148,7 +149,6 @@ The story for this game has been taken and adapted from the book ["Harap Alb"](h
 
 - Over 100 problems were caused by the back slashes in ASCII art : 'invalid escape sequence' these issues were solved by adding r in front of each string to ignore escape characters
 
-
 ## Acknowledgements
 
  For inpiration in general, for code and advice, I'd like to give thanks to:
@@ -158,25 +158,45 @@ The story for this game has been taken and adapted from the book ["Harap Alb"](h
 * Kasia Bogucka
 
 
-### Sources
+## Sources
 
-- Sites that provided me with helpful information and resolved many of my issues:
+### Sites that provided me with helpful information and resolved many of my issues:
 
-https://learn.codeinstitute.net
-https://stackoverflow.com/
-https://www.freecodecamp.org/
-https://www.w3schools.com/ 
+-  https://learn.codeinstitute.net
+- https://stackoverflow.com/
+- https://www.freecodecamp.org/
+- https://www.w3schools.com/ 
 
-- Youtube Tutorials that helped me to understand Python and how to understand other technolgies used for this project:
 
-https://www.youtube.com/watch?v=Es6LpT4I7vY&ab_channel=Codecert
-https://www.youtube.com/watch?v=miuHrP2O7Jw&ab_channel=DougMcNally
-https://www.youtube.com/watch?v=HzDcKq2NDwM&ab_channel=ElijahHenderson
-https://www.youtube.com/watch?v=8ext9G7xspg&ab_channel=freeCodeCamp.org
-https://www.youtube.com/watch?v=u51Zjlnui4Y&ab_channel=TechWithTim
-https://www.youtube.com/watch?v=y_7czmJXK_c&ab_channel=EsterlingAccime
+### Youtube Tutorials that helped me to understand Python and how to understand other technolgies used for this project:
 
-- Projects of other fellow colleagues which inspired this game:
+- Inspiration how to write a  Text-Based Adventure Game
 
-https://github.com/sherryrich/bandersnatch
-https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3
+    - https://www.youtube.com/watch?v=miuHrP2O7Jw&ab_channel=DougMcNally 
+    - https://www.youtube.com/watch?v=HzDcKq2NDwM&ab_channel=ElijahHenderson
+
+- Inspiration for different challenges as 'Guess a number' or 'Create a magic phrase'
+
+    - https://www.youtube.com/watch?v=8ext9G7xspg&ab_channel=freeCodeCamp.org
+    
+- Code readability and scalability 
+
+    - https://www.youtube.com/watch?v=Es6LpT4I7vY&ab_channel=Codecert 
+
+- Typewriter Style Animated Text Tutorial
+
+    - https://www.youtube.com/watch?v=HzDcKq2NDwM&ab_channel=ElijahHenderson
+    - https://www.youtube.com/watch?v=2h8e0tXHfk0&ab_channel=LearnLearnScratchTutorials
+
+- How To Print Colored Text
+    - https://www.youtube.com/watch?v=u51Zjlnui4Y&ab_channel=TechWithTim
+
+- Enable automatic deployment to Heroku
+
+    - https://www.youtube.com/watch?v=y_7czmJXK_c&ab_channel=EsterlingAccime
+
+
+### Projects of other fellow colleagues which inspired this game:
+
+- https://github.com/sherryrich/bandersnatch
+- https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3
